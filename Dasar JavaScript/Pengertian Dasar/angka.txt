@@ -1,0 +1,23 @@
+Angka
+
+-Angka tanpa desimal
+    - 10,1500,123456
+    - akurat sampai 15 digit (lebih dari itu dibulatkan)
+
+-Angka dengan desimal
+    - 3.14, 0.5, 100.00 (tulis pake titik)
+    - maksimal menuliskan 17 digit dibelakang koma/titik
+
+-Eksponen
+    - 123e5  // 12300000 (e = 0) (e2 = 00) ..dst
+    - 123e-5 // 0.00123
+
+-Jangan pernah mengawali angka dengan "0"
+    - Angka akan dianggap bilangan oktal (bilangan basis 8)
+
+-Angka infinity
+    -  2 : 0 =  infinity
+    - -2 : 0 = -infinity
+    -  0 : 0 =  NaN (Not a Number)
+    - 10 : "string" = NaN
+    - 10 : "10" = 1 (string diisi angka akan dianggap angka)

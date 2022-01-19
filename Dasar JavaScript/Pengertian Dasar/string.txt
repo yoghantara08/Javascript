@@ -1,0 +1,28 @@
+Tipe data String pada JavaScript digunakan untuk merepresentasikan 
+data "tekstual" / "plain text"
+
+" " / ' ' (sama aja)
+
+gunakan \" atau \' kalo ingin menggunakan string kutip
+
+Escape character
+\0  = karakter NULL
+\'  = '
+\"  = "
+\\  = \
+\n  = new line /baris baru
+\t  = tab
+\b  = backspace
+\uXXXX = unicode
+
+contoh unicode
+\u00A9 = (gambar copyright)
+\u00AE = (gambar R)
+\u00B1 = (tanda kurang lebih)
+\u2122 = (TM)
+
+membandingkan string 
+    ==
+
+.length (menghitung panjang sebuah string (jumlah karakter dalam string))
+.length juga menghitung spasi

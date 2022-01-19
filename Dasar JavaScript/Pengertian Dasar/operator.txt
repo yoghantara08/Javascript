@@ -1,0 +1,58 @@
+Operator dalam JavaScript adalah sebuah "simbol" 
+yang digunakan untuk melakukan "operasi"
+
+Jenis Operator ;
+
+--Binary--
+membutuhkan 2 operand
+operand1 operator operand2
+
+1. Aritmatika
+    +   -   *   / 
+
+    %(modulus = sisa hasil bagi)
+
+2. Penugasan / Assignment
+    =
+    += (x += y sama dengan x = x + y) 
+    -= (x -= y sama dengan x = x - y)
+    *= (x *= y sama dengan x = x * y)
+    /= (x /= y sama dengan x = x / y)
+    %= (x %= y sama dengan x = x % y) 
+
+3. Perbandingan / Comparison 
+    ==  (sama dengan)
+    !=  (tidak sama dengan)
+    === (strict sama dengan)  strict = membandingkan identitas seperti 10 === "10" itu false
+    !== (strict tidak sama dengan)
+    >   (lebih besar)
+    <   (lebih kecil)
+    >=  (lebih besar sama dengan)
+    <=  (lebih kecil sama dengan)
+
+    Hasil perbandingan akan menghasilkan "boolean" true / false
+
+4. Logika / Logical
+    && (AND)
+    || (OR)
+    !  (NOT)
+
+5. String
+    + ("apple" + "pen" = "applepen")
+
+--Ternary--
+membutuhkan 3 operand
+6. Kondisional
+    (kondisi) ? benar : salah
+    jika benar = mengambil apapun yg ditulis pada "benar"
+    jika salah = mengambil apapun yg ditulis pada "salah"
+
+--Unary--
+membutuhkan 1 operand
+operator operand / operand operator
+7. Typeof
+    typeof(operand)
+
+    typeof(10)   = "Number"
+    typeof("10") = "String"
+    typeof(true) = "Boolean"

@@ -1,0 +1,46 @@
+Sebuah 'tempat/wadah' yang memiliki nama,
+yang digunakan untuk menyimpan 'nilai'
+
+1. Deklarasi
+    mendaftarkan variabel ke dalam lingkup yang sesuai
+2. Inisialisasi
+    menyediakan memori untuk variabel
+3. Assignment 
+    menetapkan nilai yang spesifik ke dalam variabel
+
+var x; // deklarasi & Inisialisasi
+x = 20; // Assignment
+
+Deklarasi variabel
+1. var
+    var <nama variabel> 
+    aturan : 
+        1. gaboleh pake spasi
+        2. tidak boleh angka paling depan diikuti huruf (1tidak;)
+        // Camel Case
+        3. namaVariabelPanjang;
+
+        keyword & reserved word (kata2 yg tidak boleh dipakai)
+        -kata yg digunakan sebagai syntax dlm JavaScript
+
+    shorthand: 
+
+    var nama;
+    var umur;
+    var lulus;
+
+    nama = "Gustut";
+    umur = 20;
+    lulus = true;
+
+    menjadi 
+
+    var nama = "Gustut",
+        umur = 20,
+        lulus = true;
+
+    variable scope (lingkup variabel)
+
+
+2. let
+3. const

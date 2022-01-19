@@ -1,0 +1,16 @@
+Control Flow (Alur Kendali)
+
+"Apabila program kita memiliki lebih dari 1 statement, maka
+statement tersebut akan dieksekusi dari "atas ke bawah" atau
+dari "kiri ke kanan".
+
+1. Pengulangan / Loop / Iterasi
+    for
+    while
+    do while
+
+2. Pengkondisian / Percabangan
+    if
+    if.. else
+    if.. else if.. else
+    switch

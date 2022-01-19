@@ -1,0 +1,22 @@
+Sebuah tipe data yang merepresentasikan logika
+True | False
+
+Biasanya digunakan pada statement "pengkondisian"
+untuk menentukan aksi yg berbeda dan mengatur alur
+kendali program
+
+
+Boolean(nilai)
+
+contoh : 
+Boolean(10 < 20) = True
+
+
+truthy              | falsy
+
+1. true             | False
+2. non-zero number  | 0
+3. "string"         | ""
+4. object           | undefined (mendeklarasikan variable yg blom diisi nilai)
+5. arrays           | NULL (nilai kosong yg bisa diberikan pada variabel)
+6. functions        | NaN
