@@ -14,3 +14,12 @@ blok kode yg dibuat untuk melakukan tugas spesifik
 dapat dipanggil berulangkali
 memudahkan penelusuran
 reusability
+
+
+Parameter
+    Variabel yang di tulis di dalam kurung pada saat function
+    dibuat, digunakan untuk menampung nilai yang dikirimkan saat function dipanggil.
+
+Argument
+    Nilai yang dikirimkan ke parameter saat fungsi dipanggil
+
