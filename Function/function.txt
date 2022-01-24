@@ -25,3 +25,6 @@ Argument
 
 Arguments (Pseudo variable)
     Array yang berisi nilai yang dikirimkan saat fungsi dipanggil
+
+Refactoring
+    Sebuah proses mengubah kode agar menjadi lebih "BAIK" tanpa mengubah fungsionalitasnya
