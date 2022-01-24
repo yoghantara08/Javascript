@@ -7,3 +7,10 @@ Function
 4.  untuk dapat menggunakannya, kita harus "membuat" terlebih
     dahulu Function tersebut, lalu "memanggilnya" (ada fuction yg sudah dibuatkan oleh JS dan ada yg kita buat sendiri)
 5. Termasuk kedalam First-Class object
+
+function yang baik hanya melakukan 1 perintah (tujuan)
+
+blok kode yg dibuat untuk melakukan tugas spesifik
+dapat dipanggil berulangkali
+memudahkan penelusuran
+reusability
