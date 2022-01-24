@@ -31,5 +31,17 @@ Refactoring
 
 Variable Scope
     Block scope
-    
+
     Function scope
+
+Rekursif
+    Pemanggilan fungsi oleh dirinya sendiri (fungsi)
+
+    Base case : kondisi akhir rekursif yang menghasilkan nilai
+
+    semua looping bisa dibuat rekursif, tapi tidak sebaliknya
+
+    Implementasi rekursif : 1. Mengganti looping
+                            2. Fibonacci
+                            3. Pencarian dan penelusuran struktur data "list" dan "tree"
+                            4. Bahasa pemgrograman yang tidak memiliki pengulangan (Haskell, Erlang, Prolog,dll)
