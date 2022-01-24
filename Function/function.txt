@@ -28,3 +28,8 @@ Arguments (Pseudo variable)
 
 Refactoring
     Sebuah proses mengubah kode agar menjadi lebih "BAIK" tanpa mengubah fungsionalitasnya
+
+Variable Scope
+    Block scope
+    
+    Function scope
