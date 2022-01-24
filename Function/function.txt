@@ -23,3 +23,5 @@ Parameter
 Argument
     Nilai yang dikirimkan ke parameter saat fungsi dipanggil
 
+Arguments (Pseudo variable)
+    Array yang berisi nilai yang dikirimkan saat fungsi dipanggil
