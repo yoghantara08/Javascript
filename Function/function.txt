@@ -1,0 +1,9 @@
+Function
+1.  Sebuah sub-program / sub-routine yang dapat "dipanggil" di 
+    bagian lain pada program
+2.  Merupakan struktur dasar pembentuk dari javascript
+3.  Disebut juga sebagai prosedur(kumpulan "statement untuk
+    melakukan tugas atau menghitung sebuah nilai)
+4.  untuk dapat menggunakannya, kita harus "membuat" terlebih
+    dahulu Function tersebut, lalu "memanggilnya" (ada fuction yg sudah dibuatkan oleh JS dan ada yg kita buat sendiri)
+5. Termasuk kedalam First-Class object
