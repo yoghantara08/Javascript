@@ -75,9 +75,22 @@
 // console.log(tampilAngka.join(' - '));
 
 // 8. sort
+// var angka = [2, 5, 1, 6, 7, 20, 30, 10, 50, 9, 3, 5];
+// console.log(angka.join(' - '));
+// angka.sort(function (a, b) {
+//   return a - b;
+// });
+// console.log(angka.join(' - '));
+
+// 9. filter (bisa mencari banyak nilai)
+// 10. find (hanya dapat mencari angka pertama yg ditemukan)
 var angka = [2, 5, 1, 6, 7, 20, 30, 10, 50, 9, 3, 5];
-console.log(angka.join(' - '));
-angka.sort(function (a, b) {
-  return a - b;
+var angka2 = angka.filter(function (x) {
+  return x >= 5;
 });
-console.log(angka.join(' - '));
+var angka3 = angka.find(function (y) {
+  return y >= 5;
+});
+console.log('array awal : ' + angka.join(' - '));
+console.log('filter : ' + angka2.join(' - '));
+console.log('find : ' + angka3);
