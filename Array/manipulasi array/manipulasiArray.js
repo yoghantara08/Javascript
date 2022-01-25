@@ -47,7 +47,37 @@
 
 // 5. slice
 // slice(awal,akhir)
-var arr = ['gustut', 'ricky', 'galang', 'krisdit', 'rama'];
-var arr2 = arr.slice(1, 3);
-console.log(arr.join(' - '));
-console.log(arr2.join(' - '));
+// var arr = ['gustut', 'ricky', 'galang', 'krisdit', 'rama'];
+// var arr2 = arr.slice(1, 3);
+// console.log(arr.join(' - '));
+// console.log(arr2.join(' - '));
+
+// 6. forEach
+// var angka = [1, 2, 3, 4, 5, 6, 7, 8];
+// var nama = ['gustut', 'ricky', 'galang', 'krisdit', 'rama'];
+// // for (var i = 0; i < angka.length; i++) {
+// //   console.log(angka[i]);
+// // }
+
+// angka.forEach(function (e) {
+//   console.log(e);
+// });
+
+// nama.forEach(function (e, i) {
+//   console.log('Mahasiswa ke- ' + (i + 1) + ': ' + e);
+// });
+
+// 7. map
+// var angka = [1, 2, 3, 4, 5, 6, 7, 8];
+// var tampilAngka = angka.map(function (e) {
+//   return e * 2;
+// });
+// console.log(tampilAngka.join(' - '));
+
+// 8. sort
+var angka = [2, 5, 1, 6, 7, 20, 30, 10, 50, 9, 3, 5];
+console.log(angka.join(' - '));
+angka.sort(function (a, b) {
+  return a - b;
+});
+console.log(angka.join(' - '));
