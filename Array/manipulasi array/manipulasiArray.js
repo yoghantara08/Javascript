@@ -33,8 +33,21 @@
 // // yohan & doddy ditambahkan oleh push -> doddy dihilangkan pop
 
 // 3. unshift & shift
+// var arr = ['gustut', 'ricky', 'galang', 'krisdit', 'rama'];
+// arr.unshift('doddy', 'yohan'); //menambahkan elemen baru di awal array
+// arr.shift(); //menghapus elemen paling awal
+// console.log(arr.join(' - '));
+// // doddy & yohan ditambahkan oleh unshift -> doddy(paling awal) dihapus oleh shift
+
+// 4. splice
+// splice (indexAwal, mauDihapusBerapa, elemenBaru1, elemenBaru2, ...)
+// var arr = ['gustut', 'ricky', 'galang', 'krisdit', 'rama'];
+// arr.splice(3, 2, 'doddy', 'yohan');
+// console.log(arr.join(' - '));
+
+// 5. slice
+// slice(awal,akhir)
 var arr = ['gustut', 'ricky', 'galang', 'krisdit', 'rama'];
-arr.unshift('doddy', 'yohan'); //menambahkan elemen baru di awal array
-arr.shift(); //menghapus elemen paling awal
+var arr2 = arr.slice(1, 3);
 console.log(arr.join(' - '));
-// doddy & yohan ditambahkan oleh unshift -> doddy(paling awal) dihapus oleh shift
+console.log(arr2.join(' - '));
