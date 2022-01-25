@@ -1,0 +1,13 @@
+Array adalah "tipe data yang digunakan untuk mendeskripsikan kumpulan
+elemen (nilai atau variable), yang tiap-tiap elemennya memiliki index"
+
+var hari = ['senin','selasa','rabu'...,'minggu]; // 
+[] <- ini adalah array
+
+Array :
+    1. Variable jamak,yang mempunyai banyak elemen dan diacu dengan nama yang sama
+    2. Kumpulan pasangan key dan nilai / key and value pair
+    3. Key adalah index pada array dengan tipe integer yg dimulai dari 0
+    4. Array pada javascript bertipe object
+    5. Array pada javascript memiliki fungsi / method length untuk menghitung jumlah elemen didalamnya
+    6. Elemen pada array boleh memiliki tipe data yang berbeda
