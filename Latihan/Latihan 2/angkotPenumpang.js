@@ -1,4 +1,5 @@
 var penumpang = ['gustut', 'yoghantara', undefined, 'ricky'];
+
 var tambahPenumpang = function (namaPenumpang, penumpang) {
   // jika angkot kosong
   if (penumpang.length == 0) {
@@ -28,6 +29,34 @@ var tambahPenumpang = function (namaPenumpang, penumpang) {
         // tambah penumpang diakhir array
         penumpang.push(namaPenumpang);
         // kembalikan isi array dan keluar dari function
+        return penumpang;
+      }
+    }
+  }
+};
+
+var hapusPenumpang = function (namaPenumpang, penumpang) {
+  // jika angkot kosong
+  if (penumpang.length == 0) {
+    // tampilkan pesan bahwa angkot kosong, dan tidak mungkin ada penumpang turun
+    console.log('Angkot sedang kosong');
+
+    return penumpang;
+  } else {
+    // telusuri seluruh kursi awal
+    for (var i = 0; i < penumpang.length; i++) {
+      // jika nama penumpang sesuai
+      if (penumpang[i] == namaPenumpang) {
+        // rubah menjadi undefined
+        penumpang[i] = undefined;
+
+        return penumpang;
+      }
+      // jika tidak ada nama yang sesuai
+      else if (i == penumpang.length - 1) {
+        // tampilkan pesan kesalahan
+        console.log('Tidak ada penumpang dengan nama ' + namaPenumpang);
+
         return penumpang;
       }
     }
