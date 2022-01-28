@@ -46,3 +46,15 @@ Struktur Hierarki DOM Tree
         Node yg berada 1 tingkat diatas node lain
     3. Child
         Node yg berada 1 tingkat dibawah node lain
+
+DOM Selection Method
+    1. getElementByID()
+        hasil = element
+    2. getElementsByTagName()
+        hasil = HTMLCollection
+    3. getElementsByClassName()
+        hasil = HTMLCollection
+    4. querySelector()
+        hasil = element
+    5. querySelectorAll()
+        hasil = nodeList
