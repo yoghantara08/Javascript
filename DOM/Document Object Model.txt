@@ -18,3 +18,31 @@ Model
 
 Pohon hirarki DOM / DOM Tree
 simpul / node
+
+Tipe node
+    1. Element
+        Tag HTML
+    2. Attribute
+        class id href dll yg berada di dalam tag HTML
+    3. Text
+        teks yang berada di dalam tag html
+    4. Document
+
+Node list
+    Memilih kumpulan node (dapat berisi node apapun)
+    struktur datanya mirip dengan array
+    tidak bersifat live
+
+HTMLCollection
+    Memilih kumpulan node (hanya untuk yg bertipe element html)
+    struktur datanya mirip dengan array
+    bersifat live
+
+Struktur Hierarki DOM Tree
+    1. Root Node
+        Node yang menjadi sumber dari semua node lain di dalam DOM
+        Document
+    2. Parent Node
+        Node yg berada 1 tingkat diatas node lain
+    3. Child
+        Node yg berada 1 tingkat dibawah node lain
