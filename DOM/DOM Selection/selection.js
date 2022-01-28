@@ -39,3 +39,8 @@ const p = document.querySelectorAll('p');
 for (let i = 0; i < p.length; i++) {
   p[i].style.backgroundColor = 'red';
 }
+
+// Mengubah Node Root
+const sectionB = document.getElementById('b');
+const li3 = sectionB.querySelector('ul li:nth-child(3)');
+li3.style.backgroundColor = 'gray';
