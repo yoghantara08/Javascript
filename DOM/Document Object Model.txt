@@ -1,0 +1,20 @@
+DOM (Document Object Model) 
+adalah antarmuka pemrograman untuk HTML yang merepresentasikan
+halaman web, sehingga program dapat mengubah dan memanipulasi strukturnya 
+-Mozila
+
+DOM -Sandhika Galih
+Representasi elemen HTML pada dokumen menjadi sebuah object
+
+Document 
+    Isi dari website kita
+
+Object
+    Nilai / tipe data pada javascript (array yg lebih sakti)
+
+Model
+    Representasi akan sesuatu
+
+
+Pohon hirarki DOM / DOM Tree
+simpul / node
