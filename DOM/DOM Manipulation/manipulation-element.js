@@ -1,3 +1,7 @@
+// ----------------------------------------------------------
+// 1. Manipulasi Element
+// ----------------------------------------------------------
+
 // element.innerHTML
 // const judul = document.getElementById('judul');
 // judul.innerHTML = 'Judul diubah dari javascript';
@@ -23,6 +27,6 @@
 
 // ==========================================================
 // element.classList
-const label = document.querySelector('section#a p:nth-child(3)');
-label.classList.add('label');
-label.classList.remove('p2');
+// const label = document.querySelector('section#a p:nth-child(3)');
+// label.classList.add('label');
+// label.classList.remove('p2');
