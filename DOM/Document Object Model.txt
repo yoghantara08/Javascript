@@ -58,3 +58,22 @@ DOM Selection Method
         hasil = element
     5. querySelectorAll()
         hasil = nodeList
+
+DOM Manipultaion
+    1. Manipulasi Element
+        1. element.innerHTML
+        2. element.style.<property>
+        3. element.setAttribute()
+            -getAttribute()
+            -removeAttribute()
+        4. element.classList
+            -element.classList.add()
+            -element.classList.remove()
+            -element.classList.toggle() // menghapus jika punya, menambahkan jika tidak ada
+            -element.classList.item() // untuk mengetahui kelas tertentu (pakai nomor index)
+            -element.classList.contains() // untuk mengetahui kelas tertentu (pakai nama kelas)
+            -element.classList.replace() // mengganti kelas
+            
+        ...dll
+
+    2. Manipulasi Node
