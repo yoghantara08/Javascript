@@ -77,3 +77,9 @@ DOM Manipultaion
         ...dll
 
     2. Manipulasi Node
+        1. document.createElement()
+        2. document.createTextNode()
+        3. node.appendChild()
+        4. node.insertBefore()
+        5. parentNode.removeChild()
+        6. parentNode.replaceChild()
