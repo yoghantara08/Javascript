@@ -83,3 +83,15 @@ DOM Manipultaion
         4. node.insertBefore()
         5. parentNode.removeChild()
         6. parentNode.replaceChild()
+
+
+DOM Events
+    - Event pada javascript merepresentasikan sebuah kejadian yang terjadi
+      di dalam DOM.... Kejadian tersebut bisa dilakukan oleh user
+      (mouse event, keyboard event, dll)
+
+Mendengarkan event
+    - Event Handler
+        = Inline HTML Attribute
+        = Element method
+    - addEventListener()
