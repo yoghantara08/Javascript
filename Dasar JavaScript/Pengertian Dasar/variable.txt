@@ -42,5 +42,7 @@ Deklarasi variabel
     variable scope (lingkup variabel)
 
 
-2. let
+2. let 
+    Block scope (tidak lagi menganut function scope)
 3. const
+    Block scope (tidak lagi menganut function scope)
