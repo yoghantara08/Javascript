@@ -43,6 +43,9 @@ Deklarasi variabel
 
 
 2. let 
-    Block scope (tidak lagi menganut function scope)
+    -Block scope (tidak lagi menganut function scope)
+    -nilai / value bisa dirubah
 3. const
-    Block scope (tidak lagi menganut function scope)
+    -Block scope (tidak lagi menganut function scope)
+    -nilai / value tidak bisa dirubah (tidak dapat dipakai di for-looping)
+    -untuk meminimalisir perubahan state
