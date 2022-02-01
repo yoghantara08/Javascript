@@ -95,3 +95,5 @@ Mendengarkan event
         = Inline HTML Attribute
         = Element method
     - addEventListener()
+
+DOM Traversal (Penelusuran DOM)
