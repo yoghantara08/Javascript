@@ -14,6 +14,22 @@ function getHasil(comp, user) {
   if (user == 'kertas') return comp == 'batu' ? 'MENANG!' : 'KALAH!';
 }
 
+// Timing events (untuk memutar gambar pilihan komputer)
+function putar() {
+  const imgKomputer = document.querySelector('.imgKomputer');
+  const gambar = ['batu', 'gunting', 'kertas'];
+  let i = 0;
+  const waktuMulai = new Date().getTime();
+  setInterval(function () {
+    if (new Date().getTime() - waktuMulai > 1000) {
+      clearInterval;
+      return;
+    }
+    imgKomputer.setAttribute('src', 'img/' + gambar[i++] + '.png');
+    if (i == gambar.length) i = 0;
+  }, 100);
+}
+
 // Menangkap pilihan user
 const pilihanPlayer = document.querySelectorAll('.kotakUser img');
 
@@ -22,12 +38,17 @@ pilihanPlayer.forEach(function (pil) {
     const pilihanKomputer = getPilihanKomputer();
     const pilihanUser = pil.className;
     const hasil = getHasil(pilihanKomputer, pilihanUser);
+    const textHasil = document.querySelector('.pemenang');
+    textHasil.innerHTML = '';
 
-    const imgKomputer = document.querySelector('.imgKomputer');
-    imgKomputer.setAttribute('src', 'img/' + pilihanKomputer + '.png');
+    putar();
+    setTimeout(function () {
+      const imgKomputer = document.querySelector('.imgKomputer');
+      imgKomputer.setAttribute('src', 'img/' + pilihanKomputer + '.png');
 
-    const pemenang = document.querySelector('.pemenang');
-    pemenang.innerHTML = hasil;
+      const pemenang = document.querySelector('.pemenang');
+      pemenang.innerHTML = hasil;
+    }, 1000);
   });
 });
 
