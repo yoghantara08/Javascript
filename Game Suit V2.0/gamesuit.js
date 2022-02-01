@@ -39,7 +39,10 @@ pilihanPlayer.forEach(function (pil) {
     const pilihanUser = pil.className;
     const hasil = getHasil(pilihanKomputer, pilihanUser);
     const textHasil = document.querySelector('.pemenang');
-    textHasil.innerHTML = '';
+
+    setTimeout(function () {
+      textHasil.innerHTML = '';
+    }, 100);
 
     putar();
     setTimeout(function () {
