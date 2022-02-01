@@ -15,42 +15,58 @@ function getHasil(comp, user) {
 }
 
 // Menangkap pilihan user
-const pBatu = document.querySelector('.batu');
-const pGunting = document.querySelector('.gunting');
-const pKertas = document.querySelector('.kertas');
+const pilihanPlayer = document.querySelectorAll('.kotakUser img');
 
-pBatu.addEventListener('click', function () {
-  const pilihanKomputer = getPilihanKomputer();
-  const pilihanUser = pBatu.className;
-  const hasil = getHasil(pilihanKomputer, pilihanUser);
+pilihanPlayer.forEach(function (pil) {
+  pil.addEventListener('click', function () {
+    const pilihanKomputer = getPilihanKomputer();
+    const pilihanUser = pil.className;
+    const hasil = getHasil(pilihanKomputer, pilihanUser);
 
-  const imgKomputer = document.querySelector('.imgKomputer');
-  imgKomputer.setAttribute('src', 'img/' + pilihanKomputer + '.png');
+    const imgKomputer = document.querySelector('.imgKomputer');
+    imgKomputer.setAttribute('src', 'img/' + pilihanKomputer + '.png');
 
-  const pemenang = document.querySelector('.pemenang');
-  pemenang.innerHTML = hasil;
+    const pemenang = document.querySelector('.pemenang');
+    pemenang.innerHTML = hasil;
+  });
 });
 
-pGunting.addEventListener('click', function () {
-  const pilihanKomputer = getPilihanKomputer();
-  const pilihanUser = pGunting.className;
-  const hasil = getHasil(pilihanKomputer, pilihanUser);
+// const pBatu = document.querySelector('.batu');
+// const pGunting = document.querySelector('.gunting');
+// const pKertas = document.querySelector('.kertas');
 
-  const imgKomputer = document.querySelector('.imgKomputer');
-  imgKomputer.setAttribute('src', 'img/' + pilihanKomputer + '.png');
+// pBatu.addEventListener('click', function () {
+//   const pilihanKomputer = getPilihanKomputer();
+//   const pilihanUser = pBatu.className;
+//   const hasil = getHasil(pilihanKomputer, pilihanUser);
 
-  const pemenang = document.querySelector('.pemenang');
-  pemenang.innerHTML = hasil;
-});
+//   const imgKomputer = document.querySelector('.imgKomputer');
+//   imgKomputer.setAttribute('src', 'img/' + pilihanKomputer + '.png');
 
-pKertas.addEventListener('click', function () {
-  const pilihanKomputer = getPilihanKomputer();
-  const pilihanUser = pKertas.className;
-  const hasil = getHasil(pilihanKomputer, pilihanUser);
+//   const pemenang = document.querySelector('.pemenang');
+//   pemenang.innerHTML = hasil;
+// });
 
-  const imgKomputer = document.querySelector('.imgKomputer');
-  imgKomputer.setAttribute('src', 'img/' + pilihanKomputer + '.png');
+// pGunting.addEventListener('click', function () {
+//   const pilihanKomputer = getPilihanKomputer();
+//   const pilihanUser = pGunting.className;
+//   const hasil = getHasil(pilihanKomputer, pilihanUser);
 
-  const pemenang = document.querySelector('.pemenang');
-  pemenang.innerHTML = hasil;
-});
+//   const imgKomputer = document.querySelector('.imgKomputer');
+//   imgKomputer.setAttribute('src', 'img/' + pilihanKomputer + '.png');
+
+//   const pemenang = document.querySelector('.pemenang');
+//   pemenang.innerHTML = hasil;
+// });
+
+// pKertas.addEventListener('click', function () {
+//   const pilihanKomputer = getPilihanKomputer();
+//   const pilihanUser = pKertas.className;
+//   const hasil = getHasil(pilihanKomputer, pilihanUser);
+
+//   const imgKomputer = document.querySelector('.imgKomputer');
+//   imgKomputer.setAttribute('src', 'img/' + pilihanKomputer + '.png');
+
+//   const pemenang = document.querySelector('.pemenang');
+//   pemenang.innerHTML = hasil;
+// });
