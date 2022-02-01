@@ -20,10 +20,20 @@ const close = document.querySelectorAll('.close');
 close.forEach(function (el) {
   el.addEventListener('click', function (e) {
     e.target.parentElement.style.display = 'none';
-    e.preventDefault();
+    e.preventDefault(); // menghentikan aksi default dari element yg diambil
+    e.stopPropagation(); // event bubbling (menyetop program agar tidak bertabrakan dengan yang lain)
+    // atau bisa dibilang agar berjalan sendiri2
   });
 });
 
+const cards = document.querySelectorAll('.card');
+cards.forEach(function (card) {
+  card.addEventListener('click', function () {
+    alert('ok');
+  });
+});
+
+// ====================================================
 // Mencoba beberapa method DOM Traversal
 const nama = document.querySelector('.nama');
 
