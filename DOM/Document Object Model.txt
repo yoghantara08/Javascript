@@ -97,3 +97,10 @@ Mendengarkan event
     - addEventListener()
 
 DOM Traversal (Penelusuran DOM)
+    Beberapa method :
+    1. parentNode               = node
+    2. parentElement            = element
+    3. nextSibling              = node
+    4. nextElementSibling       = element
+    5. previousSibling          = node
+    6. previousElementSibling   = element

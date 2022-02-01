@@ -22,3 +22,34 @@ close.forEach(function (el) {
     e.target.parentElement.style.display = 'none';
   });
 });
+
+// Mencoba beberapa method DOM Traversal
+const nama = document.querySelector('.nama');
+
+// Grandparent node = node
+console.log('Grandparent node : ');
+console.log(nama.parentNode.parentNode);
+
+// parentNode = node
+console.log('parentNode : ');
+console.log(nama.parentNode);
+
+// parentElement = element
+console.log('parentElement : ');
+console.log(nama.parentElement);
+
+// nextSibling = node
+console.log('nextSibling : ');
+console.log(nama.nextSibling);
+
+// nextElementSibling = element
+console.log('nextElementSibling : ');
+console.log(nama.nextElementSibling);
+
+// previousSibling = node
+console.log('previousSibling : ');
+console.log(nama.previousSibling);
+
+// previousElementSibling = element
+console.log('previousElementSibling : ');
+console.log(nama.previousElementSibling);
