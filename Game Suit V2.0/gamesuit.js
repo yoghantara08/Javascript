@@ -18,10 +18,9 @@ function getHasil(comp, user) {
 let sUser = 0;
 let sKomputer = 0;
 
-function getScore(hasil) {
-  if (hasil == 'SERI!') (sUser = sUser), (sKomputer = sKomputer);
-  if (hasil == 'MENANG!') (sUser = sUser + 1), (sKomputer = sKomputer);
-  if (hasil == 'KALAH!') (sUser = sUser), (sKomputer = sKomputer + 1);
+function calcScore(hasil) {
+  if (hasil == 'MENANG!') sUser += 1;
+  if (hasil == 'KALAH!') sKomputer += 1;
 }
 
 // Timing events (untuk memutar gambar pilihan komputer)
@@ -52,9 +51,10 @@ pilihanPlayer.forEach(function (pil) {
     // hasil
     const hasil = getHasil(pilihanKomputer, pilihanUser);
     const textHasil = document.querySelector('.pemenang');
-    // score
-    const scoreU = getScore(sUser);
-    const scoreK = getScore(sKomputer);
+
+    calcScore(hasil);
+    const scoreU = sUser;
+    const scoreK = sKomputer;
 
     setTimeout(function () {
       textHasil.innerHTML = '';
