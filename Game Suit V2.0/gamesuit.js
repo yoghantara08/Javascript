@@ -14,12 +14,23 @@ function getHasil(comp, user) {
   if (user == 'kertas') return comp == 'batu' ? 'MENANG!' : 'KALAH!';
 }
 
+// Score
+let sUser = 0;
+let sKomputer = 0;
+
+function getScore(hasil) {
+  if (hasil == 'SERI!') (sUser = sUser), (sKomputer = sKomputer);
+  if (hasil == 'MENANG!') (sUser = sUser + 1), (sKomputer = sKomputer);
+  if (hasil == 'KALAH!') (sUser = sUser), (sKomputer = sKomputer + 1);
+}
+
 // Timing events (untuk memutar gambar pilihan komputer)
 function putar() {
   const imgKomputer = document.querySelector('.imgKomputer');
   const gambar = ['batu', 'gunting', 'kertas'];
   let i = 0;
   const waktuMulai = new Date().getTime();
+
   setInterval(function () {
     if (new Date().getTime() - waktuMulai > 1000) {
       clearInterval;
@@ -35,13 +46,22 @@ const pilihanPlayer = document.querySelectorAll('.kotakUser img');
 
 pilihanPlayer.forEach(function (pil) {
   pil.addEventListener('click', function () {
+    // pilihan
     const pilihanKomputer = getPilihanKomputer();
     const pilihanUser = pil.className;
+    // hasil
     const hasil = getHasil(pilihanKomputer, pilihanUser);
     const textHasil = document.querySelector('.pemenang');
+    // score
+    const scoreU = getScore(sUser);
+    const scoreK = getScore(sKomputer);
 
     setTimeout(function () {
       textHasil.innerHTML = '';
+      const hapusBorder = document.querySelector('.kotakKomputer img');
+      if (hapusBorder.classList.contains('borderKomputer')) {
+        hapusBorder.classList.remove('borderKomputer');
+      }
     }, 100);
 
     putar();
@@ -49,12 +69,22 @@ pilihanPlayer.forEach(function (pil) {
       const imgKomputer = document.querySelector('.imgKomputer');
       imgKomputer.setAttribute('src', 'img/' + pilihanKomputer + '.png');
 
+      // hasil
       const pemenang = document.querySelector('.pemenang');
       pemenang.innerHTML = hasil;
+
+      // Score
+      const sUser = document.querySelector('.sU');
+      const sKomputer = document.querySelector('.sK');
+      sUser.innerHTML = scoreU;
+      sKomputer.innerHTML = scoreK;
     }, 1000);
   });
 });
 
+// ======================================================================
+// ======================================================================
+// ======================================================================
 // const pBatu = document.querySelector('.batu');
 // const pGunting = document.querySelector('.gunting');
 // const pKertas = document.querySelector('.kertas');
