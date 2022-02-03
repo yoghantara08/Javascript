@@ -67,3 +67,8 @@ h1 {
   height: 170px;
   border-radius: 50%;
 }
+
+.kotakUser img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
