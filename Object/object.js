@@ -3,7 +3,7 @@
 // membuat object
 
 // object literal
-var mhs = {
+let mhs = {
   nama: 'Gustut',
   umur: 20,
   ips: [3.2, 3.3, 3.65],
@@ -15,7 +15,7 @@ var mhs = {
 
 // Function declaration
 function buatObjectMahasiswa(nama, umur, ips, alamat) {
-  var mhs = {};
+  let mhs = {};
   mhs.nama = nama;
   mhs.umur = umur;
   mhs.ips = ips;
@@ -23,7 +23,7 @@ function buatObjectMahasiswa(nama, umur, ips, alamat) {
 
   return mhs;
 }
-var mhs2 = buatObjectMahasiswa('Yogha', 19, [2.5, 3.3, 3.8], 'wahyu graha');
+let mhs2 = buatObjectMahasiswa('Yogha', 19, [2.5, 3.3, 3.8], 'wahyu graha');
 
 // Constructor
 function Mahasiswa(nama, umur, ips, alamat) {
@@ -33,10 +33,10 @@ function Mahasiswa(nama, umur, ips, alamat) {
   this.alamat = alamat;
 }
 // Memanggilnya harus berisikan "new" didepan constructor (agar JS tidak mengira bahwa constructor tersebut adalah function declaration)
-var mhsConstructor = new Mahasiswa('GusYogha', 21, [3.5, 3.7, 3.9], 'Buduk');
+let mhsConstructor = new Mahasiswa('GusYogha', 21, [3.5, 3.7, 3.9], 'Buduk');
 
 // THIS
-var a = 5;
+let a = 5;
 // this = window (global scope)
 // this mengembalikan object global
 console.log(this.a);
