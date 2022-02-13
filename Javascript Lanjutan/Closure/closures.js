@@ -32,17 +32,15 @@ let selamatMalam = ucapkanSalam('Malam');
 selamatPagi('Gustut');
 
 // 2. Untuk membuat private method
-let add = function () {
+let add = (function () {
   let counter = 0;
   return function () {
     return ++counter;
   };
-};
+})();
 
 let counter = 100;
 
-let a = add();
-
-console.log(a());
-console.log(a());
-console.log(a());
+console.log(add());
+console.log(add());
+console.log(add());
