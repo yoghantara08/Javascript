@@ -14,3 +14,16 @@ let tampilPesan2 = (nama) => {
 };
 
 tampilPesan2('Yoghantara');
+
+// Membuat Arrow Function
+const tampilNama = (nama, waktu) => {
+  return `Halo, ${nama}, Selamat ${waktu}`;
+};
+console.log(tampilNama('Gustut Yoghantara', 'Pagi'));
+
+// Implisit return
+const tampilNama2 = (waktu) => `Selamat ${waktu}`;
+console.log(tampilNama2('Pagi'));
+
+const helloWorld = () => 'Hello World';
+console.log(helloWorld());
