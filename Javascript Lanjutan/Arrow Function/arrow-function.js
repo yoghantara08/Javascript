@@ -15,6 +15,7 @@ let tampilPesan2 = (nama) => {
 
 tampilPesan2('Yoghantara');
 
+// =============================================================
 // Membuat Arrow Function
 const tampilNama = (nama, waktu) => {
   return `Halo, ${nama}, Selamat ${waktu}`;
@@ -27,3 +28,24 @@ console.log(tampilNama2('Pagi'));
 
 const helloWorld = () => 'Hello World';
 console.log(helloWorld());
+
+// =============================================================
+// Menggunakan Function Map (mengembalikan array)
+let mahasiswa = ['Ricky', 'Galang', 'Krisdit'];
+
+let jumlahHuruf = mahasiswa.map(function (nama) {
+  return nama.length;
+});
+console.log(jumlahHuruf);
+
+// Arrow Function
+let jmlHuruf = mahasiswa.map((nama) => nama.length);
+console.log(jmlHuruf);
+
+// Mengembalikan object
+let jlHuruf = mahasiswa.map((nama) => ({
+  nama: nama,
+  jHuruf: nama.length,
+}));
+
+console.table(jlHuruf);
