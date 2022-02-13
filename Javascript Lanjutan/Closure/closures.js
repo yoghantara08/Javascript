@@ -16,3 +16,19 @@ function init() {
   tampilNama();
 }
 init();
+
+// Kenapa menggunakan Closure?
+// 1. Untuk membuat Function Factories
+function ucapkanSalam(waktu) {
+  return function (nama) {
+    console.log(`Halo ${nama}, Selamat ${waktu}`);
+  };
+}
+
+let selamatPagi = ucapkanSalam('Pagi');
+let selamatSiang = ucapkanSalam('Siang');
+let selamatMalam = ucapkanSalam('Malam');
+
+selamatPagi('Gustut');
+
+// 2. Untuk membuat private method
