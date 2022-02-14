@@ -1,0 +1,29 @@
+* Higher Order Function
+Function yang beroprasi pada function yang lain, baik itu digunakan dalam argument, maupun sebagai return value
+
+"Javascript memperlakukan function sebagai object"
+
+Higher Order Function, contoh:
+
+1.
+// kerjakanTugas = Higher Order Function
+// selesai = callback
+function kerjakanTugas(matakuliah, selesai) {
+    console.log(`Mulai mengerjakan ${matakuliah} ...`);
+    selesai();
+}
+
+function selesai () {
+    alert('Selesai mengerjakan Mata Kuliah');
+}
+
+kerjakanTugas('Pemrograman Web', selesai);
+
+2. Array.prototype.map()
+3. Array.prototype.filter()
+4. Array.prototype.reduce()
+
+
+Alasan memakai Higher Order Function
+1. Abstraksi
+    agar code lebih singkat dan simpel
