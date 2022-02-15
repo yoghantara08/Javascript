@@ -20,3 +20,5 @@ contoh
 
 3. tagged template
 tag `string text ${expression} string text` 
+
+// Bentuk yang lebih kompleks dari Template Literals, memungkinkan kita untuk membaca template literals melalui sebuah function
