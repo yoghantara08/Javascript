@@ -1,0 +1,34 @@
+Javascript 
+"Is a single-threaded, non-blocking, asynchronous and concurrent language"
+
+1. Single-threaded
+Thread
+"Urutan eksekusi kode yang dapat dilakukan secara bebas / independent satu sama lain"
+    Jadi javascirpt hanya dapat menjalankan task satu persatu
+
+2. Blocking
+    Menunggu task yang sedang berjalan untuk menjalankan task berikutnya
+
+3. Non-Blocking
+    Tidak menunggu task yang sedang berjalan
+
+4. Synchronous
+    task 1 -> task 2 -> task 3 -> task 4
+
+5. Asynchronous
+    task 1 (mulai) -> task 2 (mulai) 
+    task 1 (berjalan) + task 2(berjalan)
+    tas 1 (selesai) + task 2(selesai)
+
+Asynchronous + Single-threaded = Conccurrency
+Asynchronous + Multi-threaded = Parallelism
+
+Note:
+1. Single vs Multi-threaded
+    Lingkungan eksekusi 'task'
+2. Blocking vs Non-blocking
+    teknik 'ngoding' (IO Related)
+3. Synchronous vs Asynchronous
+    teknik 'ngoding' (HTTP Request related)
+4. Concurrent vs Parallel
+    Lingkungan eksekusi 'task'
