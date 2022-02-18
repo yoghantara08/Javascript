@@ -1,0 +1,23 @@
+[
+  {
+    "nama": "Yosep",
+    "nim": "462323",
+    "email": "Yosep@gmail.com",
+    "jurusan": "Sistem Informasi",
+    "idDosen": 1
+  },
+  {
+    "nama": "Kudang",
+    "nim": "78745645",
+    "email": "Kudang@gmail.com",
+    "jurusan": "Bisnis Digital",
+    "idDosen": 2
+  },
+  {
+    "nama": "Marta",
+    "nim": "06644",
+    "email": "Marta@gmail.com",
+    "jurusan": "Teknik Informatika",
+    "idDosen": 3
+  }
+]
