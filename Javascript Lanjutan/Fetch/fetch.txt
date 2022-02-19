@@ -1,0 +1,28 @@
+Sebuah method pada API Javascript untuk mengambil resources dari jaringan, dan mengembalikan promise yang selesai (fullfilled) ketitak ada response yang tersedia
+fetch(resources, init);
+resources :
+1. URL
+2. Request Object
+init (optional) : konfigurasi tambahan pada sebuah request berbentuk object
+method,headers,body,mode,cache,referrer,referrerPolicy,integrity,keepalive,signal
+
+response(property):
+ 
+1. headers
+2. ok
+3. redirected
+4. status
+5. statusText
+6. type
+7. url
+8. body
+
+response(method):
+
+1. json()
+2. clone()
+3. error()
+4. redirect()
+5. blob()
+6. formData()
+7. text()
