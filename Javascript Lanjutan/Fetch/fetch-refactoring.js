@@ -3,40 +3,68 @@
 // Tombol Search di klik
 const searchButton = document.querySelector('.search-btn');
 searchButton.addEventListener('click', async function () {
-  const inputKeyword = document.querySelector('.input-keyword');
-  const movies = await getMovies(inputKeyword.value);
-  updateUI(movies);
-});
-
-// Tombol Detail di klik (Event binding)
-document.addEventListener('click', async function (e) {
-  if (e.target.classList.contains('modal-detail')) {
-    const imdbid = e.target.dataset.imdbid;
-    const movieDetail = await getMovieDetail(imdbid);
-    updateUIDetail(movieDetail);
+  try {
+    const inputKeyword = document.querySelector('.input-keyword');
+    const movies = await getMovies(inputKeyword.value);
+    updateUI(movies);
+  } catch (error) {
+    alert(error);
   }
 });
 
 // Get Movies
 function getMovies(keyword) {
   return fetch('http://www.omdbapi.com/?s=' + keyword + '&apikey=846c6911')
-    .then((response) => response.json())
-    .then((response) => response.Search);
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(response.statusText);
+      }
+      return response.json();
+    })
+    .then((response) => {
+      if (response.Response === 'False') {
+        throw new Error(response.Error);
+      }
+      return response.Search;
+    });
 }
 
-// Get Detail
-function getMovieDetail(imdbid) {
-  return fetch('http://www.omdbapi.com/?i=' + imdbid + '&apikey=846c6911')
-    .then((response) => response.json())
-    .then((m) => m);
-}
-
-// Tampil Cards
+// Tampil Cards Movie
 function updateUI(movies) {
   let cards = '';
   movies.forEach((m) => (cards += showCards(m)));
   const movieContainer = document.querySelector('.movie-container');
   movieContainer.innerHTML = cards;
+}
+
+// Tombol Detail di klik (Event binding)
+document.addEventListener('click', async function (e) {
+  try {
+    if (e.target.classList.contains('modal-detail')) {
+      const imdbid = e.target.dataset.imdbid;
+      const movieDetail = await getMovieDetail(imdbid);
+      updateUIDetail(movieDetail);
+    }
+  } catch (error) {
+    alert(error);
+  }
+});
+
+// Get Detail
+function getMovieDetail(imdbid) {
+  return fetch('http://www.omdbapi.com/?i=' + imdbid + '&apikey=846c6911')
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(response.statusText);
+      }
+      return response.json();
+    })
+    .then((m) => {
+      if (m.Response === 'False') {
+        throw new Error(m.Error);
+      }
+      return m;
+    });
 }
 
 // Tampil Detail
