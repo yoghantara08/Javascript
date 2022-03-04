@@ -1,0 +1,22 @@
+Modules adalah :
+    Sekumpulan code yang dapat digunakan kembali, dengan antaramuka yang terdefinisi
+
+Node Modules :
+  1.Funsionalitas yang simpel ataupun kompleks yang tersimpan di dalam sebuah file javascript,
+    yang dapat kita gunakan kembali pada aplikasi node js.
+  2.Setiap modul di dalam node js memiliki konteksnya masing-masing,
+    tidak bisa saling tercampur dengan modul lain pada lingkup global.
+
+NodeJS Modules:
+    1. Core Modules
+        Modules yang sudah dimiliki nodejs di librarynya
+    2. Local Modules
+        Modules yang kita bikin sendiri
+    3. Third Party Modules / NPM Modules
+        Modules yang dibuat oleh orang lain,
+
+require()
+    Fungsi require mencari modul dengan urutan sebagai berikut:
+        1. Core Modules
+        2. File atau direktori(./ atau / atau ../)
+        3. Folder 'node_modules' / NPM Modules
