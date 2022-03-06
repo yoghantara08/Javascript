@@ -1,1 +1,5 @@
-[{"nama":"Gustut","email":"gustut@gmail.com","noHP":"08213123"},{"nama":"Yoghantara","email":"test@gmail.com","noHP":"0812312323"},{"nama":"Ricky","email":"ricky@gmail.com","noHP":"0812355323"},{"nama":"Yoga","noHP":"08123124423"}]
+[
+  { "nama": "Gustut", "email": "gustut@gmail.com", "noHP": "08213123" },
+  { "nama": "Yoghantara", "email": "test@gmail.com", "noHP": "0812312323" },
+  { "nama": "Ricky", "email": "ricky@gmail.com", "noHP": "0812355323" }
+]
