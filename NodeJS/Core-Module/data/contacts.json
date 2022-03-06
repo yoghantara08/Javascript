@@ -1,1 +1,4 @@
-[{"nama":"Gustut","umur":"20"}]
+[
+  { "nama": "Gustut", "umur": "20" },
+  { "nama": "Gustut", "email": "gustut@gmail.com", "nohp": "08123124451" }
+]
