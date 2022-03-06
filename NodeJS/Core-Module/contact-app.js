@@ -1,4 +1,3 @@
-const { rejects } = require("assert");
 const fs = require("fs");
 // 2. Readline
 const readline = require("readline");
@@ -19,34 +18,21 @@ if (!fs.existsSync(dataPath)) {
   fs.writeFileSync(dataPath, "[]", "utf-8");
 }
 
-const pertanyaan1 = () => {
+// membuat pertanyaan
+const pertanyaan = (p) => {
   return new Promise((resolve, reject) => {
-    rl.question("Masukkan nama anda: ", (nama) => {
+    rl.question(p, (nama) => {
       resolve(nama);
-    });
-  });
-};
-const pertanyaan2 = () => {
-  return new Promise((resolve, reject) => {
-    rl.question("Masukkan email anda: ", (email) => {
-      resolve(email);
-    });
-  });
-};
-const pertanyaan3 = () => {
-  return new Promise((resolve, reject) => {
-    rl.question("Masukkan no hp anda: ", (nohp) => {
-      resolve(nohp);
     });
   });
 };
 
 const main = async () => {
-  const nama = await pertanyaan1();
-  const email = await pertanyaan2();
-  const nohp = await pertanyaan3();
+  const nama = await pertanyaan("Masukkan nama anda: ");
+  const email = await pertanyaan("Masukkan email anda: ");
+  const noHP = await pertanyaan("Masukkan no HP anda: ");
 
-  const contact = { nama, email, nohp };
+  const contact = { nama, email, noHP };
   const file = fs.readFileSync("./data/contacts.json", "utf-8");
   const contacts = JSON.parse(file);
 
