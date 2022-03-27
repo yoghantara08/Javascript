@@ -9,9 +9,9 @@ class Employee {
 }
 
 class Manager extends Employee {
-  constructor(name) {
-    super();
-    this.name = name;
+  constructor(name, umur) {
+    super(name);
+    this.umur = umur;
   }
 
   sayHello(name) {
@@ -20,7 +20,8 @@ class Manager extends Employee {
 }
 
 const employee = new Employee("Yoghantara");
-const manager = new Manager("Gustut");
+const manager = new Manager("Gustut", 20);
 
 console.log(manager.name);
+console.log(manager.umur);
 manager.sayHello(employee.name);
