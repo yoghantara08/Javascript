@@ -31,3 +31,8 @@ https://www.youtube.com/watch?v=sSLJx5t4OJ4&list=PLFIM0718LjIW-XBdVOerYgKegBtD6r
 ```
 https://youtu.be/aviAyIK5oSU
 ```
+### 6. React JS
+
+```
+https://www.udemy.com/course/react-the-complete-guide-incl-redux/
+```
