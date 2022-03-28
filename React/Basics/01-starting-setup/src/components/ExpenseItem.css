@@ -9,6 +9,10 @@
   background-color: #4b4b4b;
 }
 
+.expense-item__date {
+  color: white;
+}
+
 .expense-item__description {
   display: flex;
   flex-direction: column;
