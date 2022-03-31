@@ -36,3 +36,6 @@ https://youtu.be/aviAyIK5oSU
 ```
 https://www.udemy.com/course/react-the-complete-guide-incl-redux/
 ```
+```
+https://youtube.com/playlist?list=PL0T3Siqy2B-Sn0MugK5JVYA2gA9i803eo
+```
