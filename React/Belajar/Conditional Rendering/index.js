@@ -72,6 +72,16 @@ function Mailbox(props) {
   );
 }
 
+// Inline If-Else with Conditional Operator
+function Ternary() {
+  const isLoggedIn = true;
+  return (
+    <div>
+      The user is <b>{isLoggedIn ? "currently" : "not"}</b> logged in.{" "}
+    </div>
+  );
+}
+
 function App() {
   return (
     <div>
@@ -83,6 +93,9 @@ function App() {
       <hr />
       <h4>Inline If with Logical && Operator:</h4>
       <Mailbox unreadMessages={messages} />
+      <hr />
+      <h4>Inline If-Else with Conditional Operator:</h4>
+      <Ternary />
     </div>
   );
 }
