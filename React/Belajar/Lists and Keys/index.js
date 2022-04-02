@@ -31,8 +31,50 @@ function NumberList2(props) {
   return <ul>{listItems}</ul>;
 }
 
+// 3. Keys Must Only Be Unique Among Siblings
+function Blog(props) {
+  const sidebar = (
+    <ul>
+      {props.posts.map((post) => {
+        <li key={post.id}>{post.title}</li>;
+      })}
+    </ul>
+  );
+
+  const content = props.posts.map((post) => {
+    return (
+      <div key={post.id}>
+        <h3>{post.title}</h3>
+        <p>{post.content}</p>
+      </div>
+    );
+  });
+
+  return (
+    <div>
+      {sidebar}
+      <br />
+      {content}
+    </div>
+  );
+}
+
 const numbers = [1, 2, 3, 4, 5];
 const numbers2 = [40, 20, 50, 80, 70];
+
+const posts = [
+  {
+    id: 1,
+    title: "Belajar React biar keren",
+    content: "Semangat Belajar React!",
+  },
+  {
+    id: 2,
+    title: "Mahasiswa Keren",
+    content: "Mahasiswa keren belajar React!",
+  },
+];
+
 function App() {
   return (
     <div>
@@ -42,6 +84,9 @@ function App() {
       <hr />
       <h4>Extracting Components with Keys:</h4>
       <NumberList2 numbers2={numbers2} />
+      <hr />
+      <h4>Keys Must Only Be Unique Among Siblings:</h4>
+      <Blog posts={posts} />
     </div>
   );
 }
