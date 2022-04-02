@@ -23,12 +23,19 @@ function ListItem(props) {
 }
 
 function NumberList2(props) {
-  const numbers = props.numbers2;
-  const listItems = numbers.map((number2) => (
-    <ListItem key={number2.toString} value={number2} />
-  ));
+  const numbers2 = props.numbers2;
+  // declared separate listitems
+  // const listItems = numbers.map((number2) => (
+  //   <ListItem key={number2.toString} value={number2} />
+  // ));
 
-  return <ul>{listItems}</ul>;
+  return (
+    <ul>
+      {numbers2.map((number2) => (
+        <ListItem key={number2.toString} value={number2} />
+      ))}
+    </ul>
+  );
 }
 
 // 3. Keys Must Only Be Unique Among Siblings
