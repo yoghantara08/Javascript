@@ -17,13 +17,31 @@ function NumberList(props) {
   return <ul>{listItems}</ul>;
 }
 
+// 2. Extracting Components with Keys
+function ListItem(props) {
+  return <li>{props.value}</li>;
+}
+
+function NumberList2(props) {
+  const numbers = props.numbers2;
+  const listItems = numbers.map((number2) => (
+    <ListItem key={number2.toString} value={number2} />
+  ));
+
+  return <ul>{listItems}</ul>;
+}
+
 const numbers = [1, 2, 3, 4, 5];
+const numbers2 = [40, 20, 50, 80, 70];
 function App() {
   return (
     <div>
       <h1>Lists and Keys</h1>
       <h4>Rendering Multiple Components:</h4>
       <NumberList numbers={numbers} />
+      <hr />
+      <h4>Extracting Components with Keys:</h4>
+      <NumberList2 numbers2={numbers2} />
     </div>
   );
 }
