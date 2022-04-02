@@ -58,6 +58,20 @@ class LoginControl extends React.Component {
   }
 }
 
+// Inline If with Logical && Operator
+const messages = ["Halo", "Ada Pesan", "Yang", "Belum", "dibaca"];
+function Mailbox(props) {
+  const unreadMessages = props.unreadMessages;
+  return (
+    <div>
+      <h1>Hello!</h1>
+      {unreadMessages.length > 0 && (
+        <h2>You have {unreadMessages.length} unread messages.</h2>
+      )}
+    </div>
+  );
+}
+
 function App() {
   return (
     <div>
@@ -66,6 +80,9 @@ function App() {
       <hr />
       <h4>Element Variables:</h4>
       <LoginControl />
+      <hr />
+      <h4>Inline If with Logical && Operator:</h4>
+      <Mailbox unreadMessages={messages} />
     </div>
   );
 }
