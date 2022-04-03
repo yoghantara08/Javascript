@@ -119,6 +119,33 @@ class FlavorForm extends React.Component {
   }
 }
 
+// 4. The file input Tag
+class FileInput extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.fileInput = React.createRef();
+  }
+
+  handleSubmit(event) {
+    alert(`Selected file : ${this.fileInput.current.files[0].name}`);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Upload file: <br />
+          <input type="file" ref={this.fileInput} />
+        </label>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    );
+  }
+}
+
 function App() {
   return (
     <div>
@@ -131,6 +158,9 @@ function App() {
       <hr />
       <h4>The select Tag:</h4>
       <FlavorForm />
+      <hr />
+      <h4>The file input Tag:</h4>
+      <FileInput />
     </div>
   );
 }
