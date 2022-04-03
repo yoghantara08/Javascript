@@ -38,17 +38,15 @@ const scaleNames = {
 class TemperatureInput extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { temperature: "" };
-
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
-    this.setState({ temperature: event.target.value });
+    this.props.onTemperatureChange(event.target.value);
   }
 
   render() {
-    const temperature = this.state.temperature;
+    const temperature = this.props.temperature;
     const scale = this.props.scale;
     return (
       <fieldset>
@@ -78,13 +76,56 @@ function tryConvert(temperature, convert) {
   return rounded.toString();
 }
 
+class Calculator2 extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleCelciusChange = this.handleCelciusChange.bind(this);
+    this.handleFafrenheitChange = this.handleFafrenheitChange.bind(this);
+    this.state = { temperature: "", scale: "c" };
+  }
+
+  handleCelciusChange(temperature) {
+    this.setState({ scale: "c", temperature });
+  }
+
+  handleFafrenheitChange(temperature) {
+    this.setState({ scale: "f", temperature });
+  }
+
+  render() {
+    const scale = this.state.scale;
+    const temperature = this.state.temperature;
+    const celsius =
+      scale === "f" ? tryConvert(temperature, toCelsius) : temperature;
+    const fahrenheit =
+      scale === "c" ? tryConvert(temperature, toFahrenheit) : temperature;
+    return (
+      <div>
+        <fieldset>
+          <legend>Converter:</legend>
+          <TemperatureInput
+            scale="c"
+            temperature={celsius}
+            onTemperatureChange={this.handleCelciusChange}
+          />
+          <TemperatureInput
+            scale="f"
+            temperature={fahrenheit}
+            onTemperatureChange={this.handleFafrenheitChange}
+          />
+          <BoilingVerdict celcius={parseFloat(celsius)} />
+        </fieldset>
+      </div>
+    );
+  }
+}
+
 function App() {
   return (
     <div>
       <h1>Lifting State Up</h1>
       <Calculator />
-      <TemperatureInput scale="c" />
-      <TemperatureInput scale="f" />
+      <Calculator2 />
     </div>
   );
 }
