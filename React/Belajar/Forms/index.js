@@ -80,6 +80,45 @@ class EssayForm extends React.Component {
   }
 }
 
+// 3. The select Tag
+class FlavorForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: "coconut" };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({ value: event.target.value });
+  }
+
+  handleSubmit(event) {
+    alert(`${this.state.value}`);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <label>
+            Pick your favorite flavor: <br />
+            <select value={this.state.value} onChange={this.handleChange}>
+              <option value="coconut">Coconut</option>
+              <option value="strawberry">Strawberry</option>
+              <option value="chocolate">Chocolate</option>
+              <option value="mango">Mango</option>
+            </select>
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    );
+  }
+}
+
 function App() {
   return (
     <div>
@@ -89,6 +128,9 @@ function App() {
       <hr />
       <h4>The textarea Tag:</h4>
       <EssayForm />
+      <hr />
+      <h4>The select Tag:</h4>
+      <FlavorForm />
     </div>
   );
 }
