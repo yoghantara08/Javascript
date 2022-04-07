@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir public"
+    "build": "babel src --out-dir public",
+    "start": "lite-server --baseDir public"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,8 @@
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7"
+  },
+  "dependencies": {
+    "lite-server": "^2.6.1"
   }
 }
