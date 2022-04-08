@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      #kotak {
+        margin-top: 20px;
+        width: 800px;
+        height: 400px;
+        background-color: beige;
+        border: 2px solid black;
+      }
+      #mouse-move,
+      #mouse-up-down {
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 26px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello World</h1>
+      <p class="p1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
+        pariatur!
+      </p>
+      <div>
+        <div class="nama">Nama</div>
+        <button id="btn-nama">Rubah Nama</button>
+      </div>
+      <button id="btn-hide">Click to hide me</button>
+    </div>
+
+    <div class="container">
+      <div id="kotak">
+        <div id="mouse-move">mousemove: X = 0, Y = 0</div>
+        <div id="mouse-up-down">mouse</div>
+        <p style="cursor: pointer; margin-left: 20px">
+          klik untuk merubah kalimat
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
