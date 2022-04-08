@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+      }
+      .container {
+        margin: 50px 50px;
+        width: 400px;
+        text-align: center;
+      }
+      .flip {
+        background-color: #f5f5f5;
+        border-bottom: 1px solid black;
+        cursor: pointer;
+        padding: 5px;
+      }
+      .panel {
+        padding: 20px;
+        background-color: #d5d5d5;
+        display: none;
+      }
+
+      .animation {
+        margin: 50px 50px;
+      }
+      .kotak {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hide and Show -->
+    <div class="container">
+      <h1 class="flip flip1">click to show/hide panel</h1>
+      <div class="panel panel1">
+        <p>This is hide and show panel</p>
+        <p>Using jQuery toggle() function</p>
+      </div>
+    </div>
+
+    <!-- Fade -->
+    <div class="container">
+      <h1 class="flip flip2">click to fade in/out panel</h1>
+      <div class="panel panel2">
+        <p>Hello World</p>
+        <p>jQuery</p>
+      </div>
+    </div>
+
+    <!-- Slide -->
+    <div class="container">
+      <h1 class="flip flip3">click to slide up/down panel</h1>
+      <div class="panel panel3">
+        <p>Hello World</p>
+        <p>jQuery</p>
+      </div>
+    </div>
+
+    <!-- Animate -->
+    <div class="animation">
+      <button id="animate">Start Animation</button>
+      <div class="kotak"></div>
+    </div>
+
+    <!-- Stop -->
+    <div class="container">
+      <button id="stop">Stop sliding</button>
+      <h1 class="flip flip4">click to slide up/down panel</h1>
+      <div class="panel panel4" style="height: 200px">Hello World</div>
+    </div>
+
+    <!-- Chaining -->
+    <div class="container">
+      <p id="p1">jQuery is fun!!</p>
+      <button id="chain">Click me</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
