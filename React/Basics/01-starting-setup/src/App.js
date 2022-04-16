@@ -8,7 +8,7 @@ const DUMMY_EXPENSES = [
     id: "e1",
     title: "Eat at restaurant",
     amount: 12_0000,
-    date: new Date(2021, 3, 20),
+    date: new Date(2020, 3, 20),
   },
   {
     id: "e2",
@@ -20,13 +20,13 @@ const DUMMY_EXPENSES = [
     id: "e3",
     title: "Buy Computer",
     amount: 23_200_000,
-    date: new Date(2021, 4, 8),
+    date: new Date(2022, 4, 8),
   },
   {
     id: "e4",
     title: "Clothes",
     amount: 12000,
-    date: new Date(2021, 1, 25),
+    date: new Date(2019, 1, 25),
   },
 ];
 
