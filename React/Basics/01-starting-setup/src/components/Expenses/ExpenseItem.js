@@ -22,7 +22,7 @@ const ExpenseItem = (props) => {
         <div className="expense-item__price">Rp {props.amount}</div>
       </div>
       {/* function jangan diisi () agar tidak langsung di eksekusi */}
-      <button onClick={clickHandler}>Change Title</button>
+      {/* <button onClick={clickHandler}>Change Title</button> */}
     </Card>
   );
 };
