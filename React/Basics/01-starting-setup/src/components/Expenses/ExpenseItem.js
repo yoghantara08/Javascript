@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
@@ -7,12 +7,14 @@ import "./ExpenseItem.css";
 const ExpenseItem = (props) => {
   // useState mereturn array
   // yg pertama valuenya sendiri, yg kedua update yg kita inginkan
-  const [title, setTitle] = useState(props.title);
+  // const [title, setTitle] = useState(props.title);
 
-  const clickHandler = () => {
-    setTitle("Title Updated");
-    console.log(title); // masih mengambil data lama dan belum terupdate
-  };
+  // const clickHandler = () => {
+  //   setTitle("Title Updated");
+  //   console.log(title); // masih mengambil data lama dan belum terupdate
+  // };
+
+  const title = props.title;
 
   return (
     <li>
