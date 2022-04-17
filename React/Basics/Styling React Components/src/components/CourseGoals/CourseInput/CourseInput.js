@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Button from "../../UI/Button/Button";
+import Button2 from "../../UI/Button/Button2";
 
 const FormControl = styled.div`
   margin: 0.5rem 0;
@@ -60,6 +61,7 @@ const CourseInput = (props) => {
         <input type="text" onChange={goalInputChangeHandler} />
       </FormControl>
       <Button type="submit">Add Goal</Button>
+      <Button2>Coba CSS Modules</Button2>
     </form>
   );
 };
