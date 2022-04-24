@@ -15,8 +15,14 @@
     <div id="container">
       <div id="result"></div>
       <ul id="users"></ul>
+      <h3>Add Post</h3>
+      <form id="postForm" action="https://jsonplaceholder.typicode.com/posts">
+        <input type="text" id="title" /><br />
+        <textarea id="body"></textarea><br />
+        <input type="submit" value="Submit" />
+      </form>
     </div>
 
-    <script src="../src/ajax.js"></script>
+    <script src="../src/post.js"></script>
   </body>
 </html>
