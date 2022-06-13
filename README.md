@@ -1,6 +1,6 @@
 # Javascript
 
-### Repository hasil belajar Bahasa Pemrograman Javascript
+### Repository hasil belajar Bahasa Pemrograman Javascript.
 
 ### 1. Dasar Pemrograman dengan Javascript
 
